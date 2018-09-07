@@ -5,6 +5,7 @@ project(zxing)
 option(BUILD_TESTING "Enable generation of test targets" OFF)
 
 set(CMAKE_LIBRARY_PATH /opt/local/lib ${CMAKE_LIBRARY_PATH})
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 # Check for polluted source tree.
 if(EXISTS ${CMAKE_SOURCE_DIR}/CMakeCache.txt OR
